@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fin Bank</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <!-- Side bar-->
+  <div class="outer-container">
+    <div class="sidebar-container d-none d-xl-block">
+      <aside class="sidebar shadow">
+        <div class="logo">
+          <img src="images/Screenshot 2022-02-01 at 17-22-24 Bank-Trend.png" width="20" alt="" srcset="">
+        </div>
+        <div class="logo-text">
+          <h6>Welcome</h6>
+          FINBANK
+        </div>
+        <div class="sidebar2">
+          <a href="#"><i class="fa fa-home" style="background-color: #f42a79; color:white;"></i> Dashboard</a>
+          <a href="#"><i class="fa fa-wrench"></i>Transactions</a><br>
+          <a href="#"><i class="fa fa-credit-card"></i> Cards</a><br>
+          <a href="#"><i class="fa fa-envelope"></i> Offers</a><br>
+          <a href="#"><i class="fa fa-dollar-sign"></i> Investments</a><br>
+          <div class="logout">
+            <a href="#"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Logout</a>
+          </div>
+        </div>
+
+      </aside>
+    </div>
+    <div class="inner-container">
+
+      <!--mobile nav-->
+      <img class="mob-logo" style="position:absolute;top:10px; left:10px;"
+        src="images/logo.png" width="60" alt="" srcset="">
+      <div class="mob-nav-btn d-block d-lg-none" style="margin-top: 10px;margin-left: 320px;margin-bottom: 0px;">
+        <button class="cust-btn" id="btn" onclick="mobilenav()" onload="visi()">☰</button>
+      </div>
+      <div id="list-dropdown d-block d-lg-none" class="list-dropdown">
+        <ul class="dropdown" id="dropdown" style="margin-top:20px;">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Feedback</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+      </div>
+
+      </button>
+
+      <!-- Navigation bar-->
+      <nav class="navbar navbar-light">
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search transaction, offers,investments etc.."
+            size="40" aria-label="Search">
+        </form>
+        <a href="#">Feedback</a>
+        <a href="#">contact</a>
+        <a href="#">Help</a>
+        <img src="images/bell.png" alt="" class="image-bell-icon">
+        <img src="images/avtar.png" alt="" srcset="" class="img-avtar">
+      </nav>
+
+      <div class="main row">
+        <div class="col-8" style="margin-left: 19px;">
+          <div class="banner flex d-inline-flex justify-content-between shadow">
+            <img class="d-none d-md-block" src="images/banner.png" alt="" srcset=""
+              width="250">
+            <div class="banner-right">
+              <div class="banner-text">
+                Live Life Confidently
+              </div>
+              <div class="banner-text2">
+                chase your dreams and finish your plan by spending money on insurance
+              </div>
+              <div class="banner-btn">
+                <button class="btn">
+                  Explore insurance
+                </button>
+              </div>
+            </div>
+
+          </div>
+          <div class="row small-card " style="margin-top:30px !important;">
+            <div class="small-card1 col-xl-4 col-sm-6 col-12">
+              <div class="card ">
+                <div class="card-content">
+                  <div class="card-body shadow">
+                    <div class="media d-flex" style="justify-content: space-around;">
+                      <div class="align-self-center">
+                        <img src="https://bit.ly/2YWQpwi" alt="" sizes="" srcset="">
+                      </div>
+                      <div class="media-body text-right">
+                        <span style="color: lightslategray;font-size: 12px;">Deposits</span>
+                        <h5>$1565</h5>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="small-card1 col-xl-4 col-sm-6 col-12 ">
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-body shadow">
+                    <div class="media d-flex" style="justify-content: space-around;">
+                      <div class="align-self-center">
+                        <img src="https://bit.ly/2YWQpwi" alt="" sizes="" srcset="">
+                      </div>
+                      <div class="media-body text-right">
+                        <span style="color: lightslategray;font-size: 12px;">Withdrawals</span>
+                        <h5>$64.89</h5>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="small-card1 col-xl-4 col-sm-6 col-12 ">
+              <div class="card">
+                <div class="card-content">
+                  <div class="card-body shadow">
+                    <div class="media d-flex" style="justify-content: space-around;">
+                      <div class="align-self-center">
+                        <img src="https://bit.ly/2YWQpwi" alt="" sizes="" srcset="">
+                      </div>
+                      <div class="media-body text-right">
+                        <span style="color: lightslategray;font-size: 12px;">Savings</span>
+                        <h5>$4023</h5>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bar graph using chart js-->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+          <div class="graph">
+            <canvas id="myChart" class="shadow" style="width:100%; background-color:white;border-radius:20px;"></canvas>
+          </div>
+        </div>
+
+       <!--Credit card section-->
+        <div class="col-3 d-none d-md-block">
+          <div class="credit-card shadow">
+            <div class="credit-card-heading" style="display: flex; justify-content: space-between;">
+              <h6>My Cards</h6>
+              <i class="fa fa-plus-square" aria-hidden="true"></i>
+            </div>
+
+            <img src="images/card.svg" alt="" srcset="" width="100%" style="border-radius:5px;"><br>
+            <div class="credit-card-heading" style="display: flex; justify-content: space-between;">
+              <h6>Latest transactions</h6>
+              <i class="fa fa-arrow-right" aria-hidden="true"></i>
+            </div>
+            <div class="transaction">
+              <div class="record" style="display: flex; justify-content: space-around">
+                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                <div class="record-heading">
+                  <h5>Supreme Shirt</h5>
+                  <h6>11 Nov 2020 11:00</h6>
+                </div>
+                <h5 style="color:red">-$25,05 ></h5>
+
+              </div>
+
+              <div class="record" style="display: flex; justify-content: space-around">
+                <i class="fa fa-money" aria-hidden="true"></i>
+                <div class="record-heading">
+                  <h5>Salary</h5>
+                  <h6>12 Nov 2020 12:00</h6>
+                </div>
+                <h5 style="color:green">-$25,05 ></h5>
+
+              </div>
+
+              <div class="record" style="display: flex; justify-content: space-around">
+                <i class="fa fa-plus" aria-hidden="true"></i>
+                <div class="record-heading">
+                  <h5>Medicine</h5>
+                  <h6>14 Nov 2020 9:00</h6>
+                </div>
+                <h5 style="color:red">-$25,05 ></h5>
+
+              </div>
+
+              <div class="record" style="display: flex; justify-content: space-around">
+                <i class="fa fa-train" aria-hidden="true"></i>
+                <div class="record-heading">
+                  <h5>Train</h5>
+                  <h6>18 Nov 2020 1:30</h6>
+                </div>
+                <h5 style="color:red">-$25,05 ></h5>
+
+              </div>
+
+              <div class="record" style="display: flex; justify-content: space-around">
+                <i class="fa fa-circle" aria-hidden="true"></i>
+                <div class="record-heading">
+                  <h5>Pizza hot</h5>
+                  <h6>18 Nov 2020 14:00</h6>
+                </div>
+                <h5 style="color:red">-$25,05 ></h5>
+
+              </div>
+
+              <div class="record" style="display: flex; justify-content: space-around">
+                <i class="fa fa-cart-plus" aria-hidden="true"></i>
+                <div class="record-heading">
+                  <h5>Supreme Shirt</h5>
+                  <h6>19 Nov 2020 3:00</h6>
+                </div>
+                <h5 style="color:green">-$25,05 ></h5>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="credit-card" id="mob-credit">
+          <div class="credit-card-heading" style="display: flex; justify-content: space-between;">
+            <h6>My Cards</h6>
+            <i class="fa fa-plus-square" aria-hidden="true"></i>
+          </div>
+
+          <img src="images/card.svg" alt="" srcset="" width="100%" style="border-radius:5px;"><br>
+          <div class="credit-card-heading" style="display: flex; justify-content: space-between;">
+            <h6>Latest transactions</h6>
+            <i class="fa fa-arrow-right" aria-hidden="true"></i>
+          </div>
+          <div class="transaction">
+            <div class="record" style="display: flex; justify-content: space-around">
+              <i class="fa fa-cart-plus" aria-hidden="true"></i>
+              <div class="record-heading">
+                <h5>Supreme Shirt</h5>
+                <h6>11 Nov 2020 11:00</h6>
+              </div>
+              <h5 style="color:red">-$25,05 ></h5>
+
+            </div>
+
+            <div class="record" style="display: flex; justify-content: space-around">
+              <i class="fa fa-money" aria-hidden="true"></i>
+              <div class="record-heading">
+                <h5>Salary</h5>
+                <h6>12 Nov 2020 12:00</h6>
+              </div>
+              <h5 style="color:green">-$25,05 ></h5>
+
+            </div>
+
+            <div class="record" style="display: flex; justify-content: space-around">
+              <i class="fa fa-plus" aria-hidden="true"></i>
+              <div class="record-heading">
+                <h5>Medicine</h5>
+                <h6>14 Nov 2020 9:00</h6>
+              </div>
+              <h5 style="color:red">-$25,05 ></h5>
+
+            </div>
+
+            <div class="record" style="display: flex; justify-content: space-around">
+              <i class="fa fa-train" aria-hidden="true"></i>
+              <div class="record-heading">
+                <h5>Train</h5>
+                <h6>18 Nov 2020 1:30</h6>
+              </div>
+              <h5 style="color:red">-$25,05 ></h5>
+
+            </div>
+
+            <div class="record" style="display: flex; justify-content: space-around">
+              <i class="fa fa-circle" aria-hidden="true"></i>
+              <div class="record-heading">
+                <h5>Pizza hot</h5>
+                <h6>18 Nov 2020 14:00</h6>
+              </div>
+              <h5 style="color:red">-$25,05 ></h5>
+
+            </div>
+
+            <div class="record" style="display: flex; justify-content: space-around">
+              <i class="fa fa-cart-plus" aria-hidden="true"></i>
+              <div class="record-heading">
+                <h5>Supreme Shirt</h5>
+                <h6>19 Nov 2020 3:00</h6>
+              </div>
+              <h5 style="color:green">-$25,05 ></h5>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
